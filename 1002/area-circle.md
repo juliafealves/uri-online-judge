@@ -1,4 +1,4 @@
-#Area of a Circle
+# Area of a Circle
 The formula to calculate the area of a circumference is defined as `A = π . R2`. Considering to this problem that 
 `π = 3.14159`:
 
@@ -13,7 +13,7 @@ decimal point. Use all double precision variables. Like all the problems, don't 
 the result, otherwise you will receive "Presentation Error".
 
 
-###Samples
+### Samples
 ```
 2.00
 A=12.5664
