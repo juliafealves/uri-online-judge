@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
-a = int(raw_input())
-b = int(raw_input())
-x = a + b
-print 'X = %i' % x
+# Author: Júlia Fernandes Alves.
+# Extremely Basic - Beginner
+
+number_a = int(raw_input())
+number_b = int(raw_input())
+
+total = number_a + number_b
+
+print 'X = %i' % total
