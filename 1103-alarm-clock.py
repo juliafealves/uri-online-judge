@@ -12,18 +12,10 @@ while True:
     if max(time) == 0:
         break
 
-    current = (time[0], time[1])
-    alarm = (time[2], time[3])
+    current = time[0] * MINUTE_HOUR + time[1]
+    alarm = time[2] * MINUTE_HOUR + time[3]
 
-    hours = abs(alarm[0] - current[0])
-    minutes = abs(alarm[1] - current[1])
-    time_sleep = 0
-
-    if alarm[0] > current[0] or alarm[1] > current[1]:
-        time_sleep = MINUTE_HOUR * hours + minutes
+    if alarm > current:
+        print '%i' % (alarm - current)
     else:
-        time_sleep = MINUTE_DAY - (MINUTE_HOUR * hours + minutes)
-
-    print time_sleep
-
-
+        print '%i' % (MINUTE_DAY - abs(alarm - current))
